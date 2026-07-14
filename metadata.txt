@@ -1,0 +1,26 @@
+[general]
+name=HydroSizer
+qgisMinimumVersion=3.22
+qgisMaximumVersion=3.99
+description=Auditable hydraulic pipe sizing for water distribution networks using QGISRed or compatible simulation results.
+description[pt_BR]=Dimensionamento hidráulico auditável de tubulações para redes de abastecimento de água com resultados do QGISRed ou compatíveis.
+version=1.0.0
+author=Evanderson H. Aguiar
+email=evanderson.eng@gmail.com
+about=HydroSizer sizes water-distribution pipes from hydraulic results already produced by QGISRed or compatible simulators. It supports Hazen-Williams and Darcy-Weisbach, a reusable product catalog, headloss, velocity, diameter and pressure criteria, batch review, optional audited attribute updates, and an engineering calculation memory in HTML with detailed CSV. It does not run the network simulation or transient analysis, has no external Python dependencies, and keeps QGISRed Options and Materials DBFs read-only.
+about[pt_BR]=O HydroSizer dimensiona tubulações de redes de abastecimento de água a partir de resultados hidráulicos já produzidos pelo QGISRed ou por simuladores compatíveis. Inclui Hazen-Williams e Darcy-Weisbach, catálogo reutilizável de produtos, critérios de perda de carga, velocidade, diâmetro e pressão, revisão em lote, atualização opcional e auditada de atributos e memória de cálculo de engenharia em HTML com CSV detalhado. Não executa a simulação da rede nem análise de transientes, não possui dependências Python externas e mantém os DBFs Options e Materials do QGISRed somente para leitura.
+category=Vector
+tags=hydraulics,hydraulic design,water distribution,water supply,pipe sizing,network design,QGISRed,EPANET,Hazen-Williams,Darcy-Weisbach,headloss,pressure,velocity,pipe catalog,engineering,calculation report,audit
+icon=icons/icon.png
+homepage=https://github.com/Evanderson-Aguiar/HydroSizer
+repository=https://github.com/Evanderson-Aguiar/HydroSizer
+tracker=https://github.com/Evanderson-Aguiar/HydroSizer/issues
+changelog=1.0.0 - First operational release.
+    Guided five-step workflow from project mapping to calculation documents.
+    Hazen-Williams and Darcy-Weisbach batch sizing with catalog, hydraulic and endpoint-pressure criteria.
+    Reviewed preview, optional audited layer updates, HTML calculation memory and detailed CSV.
+    Brazilian Portuguese interface with English fallback and deterministic installable package.
+experimental=False
+deprecated=False
+hasProcessingProvider=no
+server=False
