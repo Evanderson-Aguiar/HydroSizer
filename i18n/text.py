@@ -1,6 +1,7 @@
 """Pure-Python localization for multiline engineering and diagnostic reports."""
 
 import re
+from typing import Optional
 
 
 _SUCCESS_STATUS_SOURCE = "".join(("P", "A", "S", "S"))
@@ -1174,3 +1175,10 @@ def translate_ui_text(source_text: str) -> str:
     if not source_text:
         return source_text
     return _UI_EXACT_PT.get(source_text, source_text)
+
+
+def registered_ui_translation(source_text: str) -> Optional[str]:
+    """Return a registered translation or ``None`` for Qt fallback."""
+    if not source_text:
+        return None
+    return _UI_EXACT_PT.get(source_text)

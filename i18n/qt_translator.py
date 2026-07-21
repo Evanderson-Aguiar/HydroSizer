@@ -1,8 +1,19 @@
 """Qt translator backed by the bundled HydroSizer pt-BR message catalog."""
 
+from typing import Optional
+
 from qgis.PyQt.QtCore import QTranslator
 
-from .text import translate_ui_text
+from .text import registered_ui_translation
+
+
+_HYDROSIZER_CONTEXTS = frozenset(
+    {
+        "HydroSizerPlugin",
+        "HydroSizerDialog",
+        "CatalogProductDialog",
+    }
+)
 
 
 class HydroSizerPortugueseTranslator(QTranslator):
@@ -14,6 +25,8 @@ class HydroSizerPortugueseTranslator(QTranslator):
         source_text: str,
         disambiguation: str = None,
         n: int = -1,
-    ) -> str:
-        del context, disambiguation, n
-        return translate_ui_text(source_text)
+    ) -> Optional[str]:
+        del disambiguation, n
+        if context not in _HYDROSIZER_CONTEXTS:
+            return None
+        return registered_ui_translation(source_text)

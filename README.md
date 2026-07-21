@@ -11,7 +11,7 @@ Hazen–Williams ou Darcy–Weisbach, verificação de pressão nas extremidades
 dimensionamento em lote, revisão dos resultados, aplicação opcional e auditada
 na camada e emissão da memória de cálculo em HTML com planilha CSV detalhada.
 
-**Versão operacional:** 1.0.0  
+**Versão operacional:** 1.0.2  
 **Compatibilidade declarada:** QGIS 3.22 a 3.99  
 **Idiomas:** português do Brasil e inglês  
 **Dependências externas:** nenhuma
